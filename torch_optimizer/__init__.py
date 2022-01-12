@@ -15,10 +15,9 @@ See documentation for full list of supported optimizers.
 __ https://pytorch.org/docs/stable/optim.html#module-torch.optim
 """
 from typing import Dict, List, Type
-
-from pytorch_ranger import Ranger, RangerQH, RangerVA
 from torch.optim.optimizer import Optimizer
 
+from .ranger import Ranger, RangerQH, RangerVA
 from .a2grad import A2GradExp, A2GradInc, A2GradUni
 from .accsgd import AccSGD
 from .adabelief import AdaBelief
